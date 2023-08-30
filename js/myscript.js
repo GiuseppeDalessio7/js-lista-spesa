@@ -3,10 +3,10 @@ Data una lista della spesa, stampare sulla pagina (anche brutalmente, basta che 
 
 
 let listShop = ['Pomodoro', 'Cipolla' , 'Aglio', 'Acqua' , 'Vino', 'Verdure']
-console.log(listShop);
+const ulEl = document.querySelector('ul')
 
 let i = 0
-let printList
+// let printList
 
 // listShop[0]
 // listShop[1]
@@ -15,11 +15,10 @@ let printList
 // listShop[4]
 // listShop[5]
 
-while (i < 5 ) {
+while (i < listShop.length ) {
     i++
-    let printList = document.getElementById("lista") .innerHTML = ("La lista è : " + listShop)
-} if (i === 0) {
-    alert('ho sbagliato')
-
+    const printList  = listShop[i - 1]
     console.log(printList);
+    const markup = document.getElementById("lista"). innerHTML = `<li>${printList}</li>`
+    
 }
