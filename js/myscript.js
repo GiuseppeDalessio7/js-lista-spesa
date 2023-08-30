@@ -17,8 +17,10 @@ let i = 0
 
 while (i < listShop.length ) {
     i++
-    const printList  = listShop[i - 1]
+    const printList = listShop[i - 1]
     console.log(printList);
     const markup = document.getElementById("lista"). innerHTML = `<li>${printList}</li>`
+
+    ulEl.innerHTML += markup
     
 }
