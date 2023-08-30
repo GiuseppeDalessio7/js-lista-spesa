@@ -8,19 +8,13 @@ const ulEl = document.querySelector('ul')
 let i = 0
 // let printList
 
-// listShop[0]
-// listShop[1]
-// listShop[2]
-// listShop[3]
-// listShop[4]
-// listShop[5]
 
 while (i < listShop.length ) {
     i++
     const printList = listShop[i - 1]
-    console.log(printList);
-    const markup = document.getElementById("lista"). innerHTML = `<li>${printList}</li>`
-
+    // console.log(printList);
+    const markup = (`<li>${printList}</li>`)
+    console.log(markup);
     ulEl.innerHTML += markup
     
 }
